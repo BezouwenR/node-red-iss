@@ -12,5 +12,5 @@ USER node-red
 RUN npm install node-red
 EXPOSE 1880/tcp
 COPY package.json /usr/src/node-red/package.json
-COPY flow-file.json /usr/src/node-red/.node-red/flow-file.json
-CMD npm start node-red --flowFile=flow-file.json
+COPY flow-file.json /usr/src/node-red/.node-red/flows.json
+CMD npm start node-red
