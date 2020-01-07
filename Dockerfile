@@ -1,6 +1,6 @@
 FROM ubuntu
 CMD /bin/bash
-MAINTAINER Stu Cunliffe,UK s_cunliffe@uk.ibm.com
+MAINTAINER Stuart Cunliffe,UK s_cunliffe@uk.ibm.com
 RUN apt-get update
 RUN apt-get install -y npm
 RUN mkdir -p /usr/src/node-red
