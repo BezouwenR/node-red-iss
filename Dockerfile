@@ -4,7 +4,6 @@ MAINTAINER Stuart Cunliffe,UK s_cunliffe@uk.ibm.com
 RUN apt-get update
 RUN apt-get install -y npm
 RUN mkdir -p /usr/src/node-red
-RUN mkdir /usr/src/node-red/log
 WORKDIR /usr/src/node-red
 RUN groupadd --force node-red
 RUN useradd --home /usr/src/node-red --gid node-red node-red
